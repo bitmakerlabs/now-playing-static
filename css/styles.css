@@ -59,7 +59,7 @@ figure {
 .site-nav {
   position: fixed;
   bottom: 0;
-  left: 0;
+
   right: 0;
   width: 100%;
   z-index: 100;
@@ -103,6 +103,7 @@ figure {
 /* MOVIE styles */
 .movie {
   position: relative;
+
 }
 
 .movie-poster,
@@ -207,17 +208,20 @@ figure {
        .site-nav {
         width: 5%;
         height:100%;
+        left: 20px;
 
        }
 
        .site-nav-item {
          float: none;
          width: inherit;
+         margin-top: 2em;
+         margin-bottom: 2em;
 
        }
 
        .movie {
-         right:-70px;
+         left:111px;
 
      }
      .movie-overview {
@@ -227,8 +231,9 @@ figure {
 
      .site-logo {
        z-index : 104;
-       width:45px;
-       top: 30px;
+       width:53px;
+       top: 20px;
+       left: 30px;
        position: fixed;
 
 }
