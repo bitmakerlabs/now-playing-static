@@ -54,6 +54,11 @@ figure {
   height: 80px;
   margin: 0;
   z-index: 100;
+
+}
+
+.site-logo-image{
+border-radius: 50%;
 }
 
 .site-nav {
@@ -247,11 +252,13 @@ figure {
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 90%;
 
 }
 
 .movie-poster {
   display:inline-block;
+
 }
 
 .movie:first-child .movie-overview {
@@ -269,5 +276,9 @@ article:first-child .movie-backdrop {
   display: block;
   width: 130%;
   ;
+}
+
+.site-nav {
+z-index: -1;
 }
 }
