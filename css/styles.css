@@ -67,7 +67,7 @@ border-radius: 50%;
 
   right: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   background-color: #ffffff;
 }
 
@@ -240,13 +240,24 @@ border-radius: 50%;
        top: 20px;
        left: 30px;
        position: fixed;
+     }
 
-}
+     .site-nav {
+     z-index: 0;
+     }
+
+     .about {
+     position: relative;
+     }
 }
 
 @media screen and ( min-width: 992px ) {
   .movie-overview, .movie-backdrop {
     display: none;
+}
+
+body {
+padding: 0;
 }
 
 main{
@@ -275,10 +286,8 @@ article:first-child .movie-poster {
 article:first-child .movie-backdrop {
   display: block;
   width: 130%;
-  ;
+
 }
 
-.site-nav {
-z-index: -1;
-}
+
 }
