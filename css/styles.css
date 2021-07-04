@@ -54,15 +54,20 @@ figure {
   height: 80px;
   margin: 0;
   z-index: 100;
+
+}
+
+.site-logo-image{
+border-radius: 50%;
 }
 
 .site-nav {
   position: fixed;
   bottom: 0;
-  left: 0;
+
   right: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   background-color: #ffffff;
 }
 
@@ -103,6 +108,7 @@ figure {
 /* MOVIE styles */
 .movie {
   position: relative;
+
 }
 
 .movie-poster,
@@ -194,4 +200,94 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+@media only screen and (min-width:768px) {
+
+
+       .site-nav-list{
+         display: grid;
+         position: absolute;
+         top:81px;
+       }
+       .site-nav {
+        width: 5%;
+        height:100%;
+        left: 20px;
+
+       }
+
+       .site-nav-item {
+         float: none;
+         width: inherit;
+         margin-top: 2em;
+         margin-bottom: 2em;
+
+       }
+
+       .movie {
+         left:111px;
+
+     }
+     .movie-overview {
+       display: inline-block;
+       width: 90%
+     }
+
+     .site-logo {
+       z-index : 104;
+       width:53px;
+       top: 20px;
+       left: 30px;
+       position: fixed;
+     }
+
+     .site-nav {
+     z-index: 0;
+     }
+
+     .about {
+     position: relative;
+     }
+}
+
+@media screen and ( min-width: 992px ) {
+  .movie-overview, .movie-backdrop {
+    display: none;
+}
+
+body {
+padding: 0;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 90%;
+
+}
+
+.movie-poster {
+  display:inline-block;
+
+}
+
+.movie:first-child .movie-overview {
+    display: block;}
+
+article:first-child {
+      display: block;
+      grid-column: 1/4;
+    }
+
+article:first-child .movie-poster {
+  display: none; }
+
+article:first-child .movie-backdrop {
+  display: block;
+  width: 130%;
+
+}
+
+
 }
